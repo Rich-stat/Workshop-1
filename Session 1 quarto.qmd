@@ -1,0 +1,353 @@
+---
+title: "Workshop 1 - Introduction to R"
+format: 
+  html:
+    code-overflow: wrap
+    df-print: kable
+knitr:
+  opts_chunk:
+    collapse: false
+theme: cerulean
+editor: visual
+code-annotations: select
+---
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Downloading & Preparing R and RStudio {.tabset}
+
+This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work).
+
+To get started, click on the tab below entitled "Installing R and RStudio"
+
+:::::::::::::: panel-tabset
+## Installing R & RStudio
+
+**1. Installing R and RStudio on a University computer:** <br> Go to AppsAnywhere and load RStudio (R will install automatically).
+
+-   You will need to do this each time you use a university computer
+
+<br> **2. To download R and RStudio to your own laptop:** <br>
+
+Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/)
+
+-   Download and install R
+    -   Select the version for your computer (mac or Windows)
+    -   Click on the first link for *R-(followed by the latest version number).pkg* to download the installation package
+        -   For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select 'About this mac'.
+    -   Follow the installation instructions
+-   Download and install RStudio
+
+*Note*: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R. You will need to re-install packages to R that you had previously used: just use *install.packages("package name")* in R.
+
+### **RStudio looks like this** <br>
+
+@fig-RStudio_png shows the arrangement of the four windows in RStudio:
+
+```{r}
+#| label: fig-RStudio_png
+#| fig-cap: "RStudio"
+#| fig-alt: "The RStudio windows look like this by default"
+#| out.width: "150%"
+#| fig-height: 3.5
+#| echo: false
+#| column: page-right
+#| lightbox: true
+knitr::include_graphics("RStudio.png")
+```
+
+<br>Click on the green '+' symbol at the top left of the screen and select 'R Script'. You will now see 4 areas of the RStudio page:<br> <br>1. The **Code Editor** at the top left area where you will do most of your work and store your code. Here you can write R code and notes to yourself. You can also save the R code and notes in an .R file<br> <br>2. The area below it (bottom left) is the **R Console**, and is essentially like R without RStudio. It is where the R code that you type in the Editor above and its output appears when you run the code.<br> <br>3. Top right is the **Workspace environment** where you can see opened objects and data.<br> <br>4. At the bottom right is the the **File Directory** and where you can create and delete folders (+Folder) and also see installed packages. Use the Files tab to select the folder in which you wish to save your work
+
+-   Click on the More cog and select 'Set as Working Directory'. This is now your default working folder.
+
+## Setting up RStudio
+
+**1. First, locate your 'OneDrive - Kingston University' folder in the File Directory in RStudio File Explorer) where you will save your work for this module**<br>
+
+Locate your OneDrive by typing in the R Console:<br>
+
+-   For Windows, use: `setwd("O:/")`<br>
+-   For a Mac, use: `setwd("~/")`.<br>
+
+Then click the 'More' cog icon in the File Directory and select *Go to working directory* and find your OneDrive folder in the File Directory in RStudio <br>
+
+-   Create a new folder entitled *LS5022* (using the +Folder option in the File Directory) in which you can save all work on this module. In the LS5022 folder, create a sub-folder entitled *Statistics* <br>
+
+-   **Set this as your working directory** using the cog icon and then select '*Set As Working Directory*'. <br><br>
+
+**a) For University computers:**<br> You will need to do this each time you open RStudio <br><br> **b) Using your own laptop:**<br> When you first use RStudio, you can set Global default settings which will be stored for when you next use RStudio. <br>
+
+::: {.callout-note icon="false" collapse="true"}
+## Change global settings to your preferences: font, wrapping of text, default working directory etc
+
+Go to **Tools \> Global Options...**
+
+-   In **Appearance**, select font etc.
+
+-   In **General**, set the default working directory by browsing to locate your *LS5022/Statistics* folder in OneDrive).<br> Ensuring that '*Restore most recently opened project at startup*' and '*Restore previously open source documents at startup*' are ticked means that what you did last time will open. This can be a useful place to start each time you use RStudio.
+
+-   Select **Code** and then select '*Use native pipe operator*' and also select '*soft-wrap R source files*' <br> Click on *Apply* and then *OK* and close the Global Options box.<br> <br>
+
+These settings will be saved on your laptop version of RStudio and your default working directory will be the *LS5022/Statistics* folder on your OneDrive whenever you open RStudio.<br><br>
+:::
+
+<br> Check your working directory:
+
+```{r}
+#| label: check_wd
+#| echo: true
+getwd()
+```
+
+<br> <br> **2. To start an R session, open an R Script using the green '+' sign at the top left of RStudio**
+
+You are now ready to use RStudio.
+
+In the next tabs, you will do some simple calculations in R, import an Excel file to R and carry out an independent samples t-test on the data. The code will also generate a bar chart.
+
+This is just an example of how it works, and we will go through this slowly in later sessions so that you can do this yourself.<br><br>
+
+## Some simple things!
+
+The first thing I want to do is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br>
+
+::: {.callout-important appearance="simple" collapse="true"}
+## Install packages: click to expand/collapse
+
+You will need to install the following packages for today by running the following code lines. Copy and paste them into the Script editor and run them:<br> `install.packages("tidyverse")`<br> `install.packages("psych")`<br> `install.packages("rio")`<br> `install.packages("rstatix")`<br> `install.packages("ggthemes")`<br> <br> If you are using your own laptop, these packages will be saved in your laptop version of RStudio (although you will need to re-install them if you upgrade to a new version of RStudio in the future).<br> <br> If you are using a university computer. you will need to install the packages you want to use each time. <br>
+:::
+
+Once packages are installed you call them by using the library() function:<br>
+
+::: {.callout-important appearance="simple" collapse="true"}
+## Call the packages to use them in your session
+
+```{r}
+#| label: packages
+#| echo: true
+#| message: false
+#| warning: false
+library(tidyverse)
+library(psych)
+library(rio)
+library(rstatix)
+library(ggplot2)
+library(ggthemes)         
+```
+:::
+
+*NB* If R ever says that a package does not exist, it means you need to install it before loading it with library().<br><br> If you want to check what packages are installed, the File Directory window has a tab called 'Packages'. Installed packages are listed. Packages that have been loaded have a tick by them. <br> <br>
+
+::: {.callout-note appearance="default" icon="false"}
+**CARRY OUT THE FOLLOWING SIMPLE EXERCISES BY TYPING (OR COPYING & PASTING) THE CODE IN THE GREY BOXES BELOW INTO THE R SCRIPT EDITOR:**
+:::
+
+**1.** To create an object called 'greeting' with text
+
+```{r}
+#| label: hello
+#| echo: true
+#| eval: false
+greeting <- "Hello World" # <1>
+greeting # <2>
+```
+
+1.  Store 'Hello World' into an object called 'greeting'
+2.  To see the content of the object, type its name. <br>
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+```{r}
+#| label: hello_1
+#| echo: false
+greeting <- "Hello World" 
+greeting                  
+```
+:::
+
+<br> **2.** Some basic arithmetic! The calculation is stored in an object called 'add'
+
+```{r}
+#| label: add
+#| echo: TRUE
+#| eval: false
+add <- 2+4  # <1>
+add         # <2>
+```
+
+1.  Here, the sum of 2+4 is stored in an object called 'add'
+2.  To see the content of the 'add' object type its name.
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+```{r}
+#| label: add_1
+#| echo: false
+#| eval: true
+add <- 2+4  # <1>
+add         # <2>
+```
+:::
+
+<br>Division:<br>
+
+```{r}
+#| label: div
+#| echo: true
+#| eval: false
+div <- 6/2
+div
+```
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+```{r}
+#| label: div_1
+#| echo: false
+#| eval: true
+div <- 6/2
+div
+```
+:::
+
+<br> **3.** Create a vector and store in an object called vector1
+
+```{r}
+#| label: vector
+#| echo: TRUE
+#| eval: false
+vector1 <- c(2,4,5,6,7,8,10,11,14,15,21,25,34,35) # <1>
+vector1 # <2>
+```
+
+1.  The numbers are 'concatenated' into a column and stored in an object called 'vector1'
+2.  Type the name of the object to see its contents.
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+```{r}
+#| label: vector_1
+#| echo: false
+#| eval: true
+vector1 <- c(2,4,5,6,7,8,10,11,14,15,21,25,34,35) # <1>
+vector1 # <2>
+```
+:::
+
+<br> 4. Calculate mean and standard deviation
+
+```{r}
+#| label: mean
+#| echo: TRUE
+#| eval: false
+mean1 <- mean(vector1)
+mean1
+
+sd1 <- sd(vector1)
+sd1
+```
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+Mean:
+
+```{r}
+#| label: mean_1
+#| echo: false
+#| eval: true
+mean1 <- mean(vector1)
+mean1
+```
+
+Standard deviation:
+
+```{r}
+#| label: SD_1
+#| echo: false
+#| eval: true
+sd1 <- sd(vector1)
+sd1
+```
+:::
+
+<br> 5. Get descriptive statistics of the vector data
+
+```{r}
+#| label: descr
+#| echo: TRUE
+#| eval: false
+vector1 |>
+  describe()
+```
+
+<br> Here, mean(), sd() and describe() are called **functions**. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br>
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+```{r}
+#| label: descr_1
+#| echo: false
+#| eval: true
+vector1 |>
+  describe()
+```
+:::
+
+## Import Excel file
+
+**1. Import an Excel file (in 'tidy' format)**
+
+-   Download the file called *2-sample_cholesterol.xlsx* from Canvas and save it to your LS5022 folder in your OneDrive.
+
+-   In RStudio, locate the file in the file directory and set this as your working directory by clicking on the cog icon.<br>
+
+```{r}
+#| label: RStudio_settings.png
+#| out.width: "70%"
+#| echo: false
+knitr::include_graphics("RStudio_settings.png")
+```
+
+-   Now import the xlsx file and store it as a dataframe called *chol_df* <br>This code uses the rio package to use the import() function. <br>It loads the Excel file and stores the data in a data frame object called '*chol_df*'<br>
+
+```{r}
+#| label: file_import
+#| echo: TRUE
+#| eval: false
+chol_df <- import("2-sample_cholesterol.xlsx")
+class(chol_df)
+```
+
+::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
+```{r}
+#| label: file_import1
+#| echo: false
+#| eval: true
+chol_df <- import("2-sample_cholesterol.xlsx")
+class(chol_df)
+```
+:::
+
+*NOTE*: this is saved as a data frame. This is the type of object that we will be working with.
+
+<br>**2. Save the chol_df object as an RData file in your desired folder** <br>(*NB* This code will save the file to wherever your current working directory is set).
+
+This means the data frame is saved and you don't have to import it every time you open RStudio! Just type in R (or just copy and paste the script):
+
+```{r}
+#| label: save_RData
+#| echo: TRUE
+#| results: FALSE
+#| message: FALSE
+save(chol_df, file="chol_df.RData")
+```
+
+<br>To open the RData file in future, simply type
+
+```{r}
+#| label: load_RData
+#| echo: TRUE
+#| results: FALSE
+load(file = "chol_df.RData")
+```
+
+<br>**3. Finally, save this R file by clicking on the Save icon in RStudio**.<br>It will save to your working directory.
+::::::::::::::
