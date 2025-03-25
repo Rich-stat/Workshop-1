@@ -152,10 +152,38 @@ Figure&nbsp;1: RStudio
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p><strong>1. First, locate your ‘OneDrive - Kingston University’ folder in the File Directory in RStudio File Explorer) where you will save your work for this module</strong><br></p>
 <p>Locate your OneDrive by typing in the R Console:<br></p>
-<ul>
-<li>For Windows, use: <code>setwd("O:/")</code><br></li>
-<li>For a Mac, use: <code>setwd("~/")</code>.<br></li>
-</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="To set the working directory in Windows (video)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+To set the working directory in Windows (video)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For Windows, use: <code>setwd("O:/")</code><br><br></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="To set the working directory on a mac (video)">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+To set the working directory on a mac (video)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For a Mac, use: <code>setwd("~/")</code>.<br><br> <a href="setwd_mac.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Setting the working directory on a mac (click on the video to enlarge it)"><img src="setwd_mac.gif" class="img-fluid" alt="Setting the working directory on a mac (click on the video to enlarge it)"></a></p>
+</div>
+</div>
+</div>
 <p>Then click the ‘More’ cog icon in the File Directory and select <em>Go to working directory</em> and find your OneDrive folder in the File Directory in RStudio <br></p>
 <ul>
 <li><p>Create a new folder entitled <em>LS5022</em> (using the +Folder option in the File Directory) in which you can save all work on this module. In the LS5022 folder, create a sub-folder entitled <em>Statistics</em> <br></p></li>
@@ -163,7 +191,7 @@ Figure&nbsp;1: RStudio
 </ul>
 <p><strong>a) For University computers:</strong><br> You will need to do this each time you open RStudio <br><br> <strong>b) Using your own laptop:</strong><br> When you first use RStudio, you can set Global default settings which will be stored for when you next use RStudio. <br></p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -172,7 +200,7 @@ Change global settings to your preferences: font, wrapping of text, default work
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Go to <strong>Tools &gt; Global Options…</strong></p>
 <ul>
@@ -199,7 +227,7 @@ Change global settings to your preferences: font, wrapping of text, default work
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>The first thing I want to do is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br></p>
 <div class="callout callout-style-simple callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -208,7 +236,7 @@ Install packages: click to expand/collapse
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>You will need to install the following packages for today by running the following code lines. Copy and paste them into the Script editor and run them:<br> <code>install.packages("tidyverse")</code><br> <code>install.packages("psych")</code><br> <code>install.packages("rio")</code><br> <code>install.packages("rstatix")</code><br> <code>install.packages("ggthemes")</code><br> <br> If you are using your own laptop, these packages will be saved in your laptop version of RStudio (although you will need to re-install them if you upgrade to a new version of RStudio in the future).<br> <br> If you are using a university computer. you will need to install the packages you want to use each time. <br></p>
 </div>
@@ -216,7 +244,7 @@ Install packages: click to expand/collapse
 </div>
 <p>Once packages are installed you call them by using the library() function:<br></p>
 <div class="callout callout-style-simple callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -225,7 +253,7 @@ Call the packages to use them in your session
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -270,7 +298,7 @@ Note
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -279,7 +307,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -307,7 +335,7 @@ Click to see the output
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -316,7 +344,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -332,7 +360,7 @@ Click to see the output
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>div</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -341,7 +369,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -369,7 +397,7 @@ Click to see the output
 </div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -378,7 +406,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -397,7 +425,7 @@ Click to see the output
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>sd1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -406,7 +434,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Mean:</p>
 <div class="cell">
@@ -430,7 +458,7 @@ Click to see the output
 </div>
 <p><br> Here, mean(), sd() and describe() are called <strong>functions</strong>. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br></p>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -439,7 +467,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
@@ -528,7 +556,7 @@ Click to see the output
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(chol_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -537,7 +565,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
