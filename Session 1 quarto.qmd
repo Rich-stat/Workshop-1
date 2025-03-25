@@ -24,7 +24,7 @@ This first workshop aims to introduce you to R and RStudio. R is the programming
 
 To get started, click on the tab below entitled "Installing R and RStudio"
 
-:::::::::::::: panel-tabset
+:::::::::::::::: panel-tabset
 ## Installing R & RStudio
 
 **1. Installing R and RStudio on a University computer:** <br> Go to AppsAnywhere and load RStudio (R will install automatically).
@@ -70,14 +70,12 @@ knitr::include_graphics("RStudio.png")
 
 Locate your OneDrive by typing in the R Console:<br>
 
-:::{.callout-tip collapse="true" title="To set the working directory in Windows (video)" icon="true"}
+::: {.callout-tip collapse="true" title="To set the working directory in Windows (video)" icon="true"}
 For Windows, use: `setwd("O:/")`<br><br>
-
 :::
 
-:::{.callout-tip collapse="true" title="To set the working directory on a mac (video)" icon="true"}
-For a Mac, use: `setwd("~/")`.<br><br>
-![Setting the working directory on a mac (click on the video to enlarge it)](setwd_mac.gif){.lightbox}
+::: {.callout-tip collapse="true" title="To set the working directory on a mac (video)" icon="true"}
+For a Mac, use: `setwd("~/")`.<br><br> ![Setting the working directory on a mac (click on the video to enlarge it)](setwd_mac.gif){.lightbox}
 :::
 
 Then click the 'More' cog icon in the File Directory and select *Go to working directory* and find your OneDrive folder in the File Directory in RStudio <br>
@@ -100,6 +98,8 @@ Go to **Tools \> Global Options...**
 -   Select **Code** and then select '*Use native pipe operator*' and also select '*soft-wrap R source files*' <br> Click on *Apply* and then *OK* and close the Global Options box.<br> <br>
 
 These settings will be saved on your laptop version of RStudio and your default working directory will be the *LS5022/Statistics* folder on your OneDrive whenever you open RStudio.<br><br>
+
+![Global options](global_options.gif){.lightbox}
 :::
 
 <br> Check your working directory:
@@ -357,4 +357,4 @@ load(file = "chol_df.RData")
 ```
 
 <br>**3. Finally, save this R file by clicking on the Save icon in RStudio**.<br>It will save to your working directory.
-::::::::::::::
+::::::::::::::::
