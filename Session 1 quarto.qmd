@@ -71,7 +71,8 @@ knitr::include_graphics("RStudio.png")
 Locate your OneDrive by typing in the R Console:<br>
 
 ::: {.callout-tip collapse="true" title="To set the working directory in Windows (video)" icon="true"}
-For Windows, use: `setwd("O:/")`<br><br>
+For Windows, use: `setwd("O:/")`<br> or `setwd("C:/Users/your k number")`, depending on your set up.<br> The following gif uses the second option<br><br>
+![Seting the working directory in Windows (click on the video to enlarge it)](How to set your working directory in Windows.gif){.lightbox}
 :::
 
 ::: {.callout-tip collapse="true" title="To set the working directory on a mac (video)" icon="true"}
