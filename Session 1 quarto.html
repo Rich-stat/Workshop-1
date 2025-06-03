@@ -101,114 +101,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="downloading-preparing-r-and-rstudio" class="level2 tabset page-columns page-full">
 <h2 class="tabset anchored" data-anchor-id="downloading-preparing-r-and-rstudio">Downloading &amp; Preparing R and RStudio</h2>
-<p>This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work).</p>
-<p>To get started, click on the tab below entitled “Installing R and RStudio”</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="Introduction">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Introduction
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work). <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop.<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> <em>NB</em> You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.</p>
+</div>
+</div>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset page-columns page-full">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Installing R &amp; RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Setting up RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Some simple things!</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Import Excel file</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Install RStudio (Cloud)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Install RStudio (Laptop)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">RStudio Setup</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Some simple things!</a></li></ul>
 <div class="tab-content page-columns page-full">
 <div id="tabset-1-1" class="tab-pane active page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><strong>1. Installing R and RStudio on a University computer:</strong> <br> Go to AppsAnywhere and load RStudio (R will install automatically).</p>
+<p>This is the version of RStudio that we will use in the workshops. However, you should download and save all of the files we use to your own laptop and practice using RStudio on your laptop (see next tab).</p>
+<p>Go to <a href="https://posit.cloud/">Posit Cloud (click on this link)</a><br><br></p>
+<p><a href="#fig-Posit_cloud_png" class="quarto-xref">Figure&nbsp;1</a> shows the opening Posit cloud page:</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-Posit_cloud_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The opening Posit cloud page looks like this">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-Posit_cloud_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="Posit%20cloud.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Posit Cloud"><img src="Posit%20cloud.png" class="img-fluid figure-img column-page-right" style="width:100.0%" alt="The opening Posit cloud page looks like this"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Posit_cloud_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Posit Cloud
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <ul>
-<li>You will need to do this each time you use a university computer</li>
+<li>Select ‘<strong>Get Started</strong>’<br><br></li>
+<li>You will see a range of plan options: select ‘<strong>Cloud Free</strong>’ by selecting “Learn more’ and then sign up to create your own account. In future, use your ID details and password to login.<br><br></li>
+<li>Select the blue icon in the top right corner that says ‘<strong>New Project</strong>’. Create a new RStudio project called ‘<strong>LS5022 Biostatistics</strong>’ (you are allowed 25 projects on the free plan). It is here that we will work and save our files in all of the workshops. <br></li>
 </ul>
-<p><br> <strong>2. To download R and RStudio to your own laptop:</strong> <br></p>
-<p>Go to <a href="https://posit.co/download/rstudio-desktop/">RStudio (click on this link)</a></p>
-<ul>
-<li>Download and install R
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Go to <a href="https://posit.co/download/rstudio-desktop/">RStudio (click on this link)</a> <br><br></p>
+<p><a href="RStudio%20page.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="The RStudio web site"><img src="RStudio%20page.png" class="img-fluid" alt="The RStudio web site"></a> <br><br></p>
+<ol type="1">
+<li>Install R
 <ul>
 <li>Select the version for your computer (mac or Windows)</li>
 <li>Click on the first link for <em>R-(followed by the latest version number).pkg</em> to download the installation package
 <ul>
 <li>For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select ‘About this mac’.</li>
 </ul></li>
-<li>Follow the installation instructions</li>
+<li>Follow the installation instructions<br><br></li>
 </ul></li>
-<li>Download and install RStudio</li>
-</ul>
-<p><em>Note</em>: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R. You will need to re-install packages to R that you had previously used: just use <em>install.packages(“package name”)</em> in R.</p>
-<section id="rstudio-looks-like-this" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="rstudio-looks-like-this"><strong>RStudio looks like this</strong> <br></h3>
-<p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;1</a> shows the arrangement of the four windows in RStudio:</p>
+<li>Install RStudio</li>
+</ol>
+<p><em>Note</em>: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><strong>1. RStudio looks like this</strong><br></p>
+<p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;2</a> shows the arrangement of the four windows in RStudio:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-RStudio_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: RStudio"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;2: RStudio"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: RStudio
+Figure&nbsp;2: RStudio
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p><br>Click on the green ‘+’ symbol at the top left of the screen and select ‘R Script’. You will now see 4 areas of the RStudio page:<br> <br>1. The <strong>Code Editor</strong> at the top left area where you will do most of your work and store your code. Here you can write R code and notes to yourself. You can also save the R code and notes in an .R file<br> <br>2. The area below it (bottom left) is the <strong>R Console</strong>, and is essentially like R without RStudio. It is where the R code that you type in the Editor above and its output appears when you run the code.<br> <br>3. Top right is the <strong>Workspace environment</strong> where you can see opened objects and data.<br> <br>4. At the bottom right is the the <strong>File Directory</strong> and where you can create and delete folders (+Folder) and also see installed packages. Use the Files tab to select the folder in which you wish to save your work</p>
+<p>Click on the green ‘+’ symbol at the top left of the screen and select ‘R Script’. You will now see 4 areas of the RStudio page:</p>
 <ul>
-<li>Click on the More cog and select ‘Set as Working Directory’. This is now your default working folder.</li>
+<li>The <strong>Code Editor</strong> at the top left area where you will do most of your work and store your code. Here you can write R code and notes to yourself. You can also save the R code and notes in an .R file</li>
+<li>The area below it (bottom left) is the <strong>R Console</strong>, and is essentially like R without RStudio. It is where the R code that you type in the Editor above and its output appears when you run the code.</li>
+<li>Top right is the <strong>Workspace environment</strong> where you can see opened objects and data.</li>
+<li>At the bottom right is the the <strong>File Directory</strong> and where you can navigate to your desired folder, create and delete folders and also see installed packages. Use the Files tab to select the folder in which you wish to save your work.
+<ul>
+<li>Then click on the More cog and select <code>Set as Working Directory</code>. This is now your working folder (you will see the code run in the R Console). <br><br></li>
+</ul></li>
 </ul>
-</section>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><strong>1. First, locate your ‘OneDrive - Kingston University’ folder in the File Directory in RStudio File Explorer) where you will save your work for this module</strong><br></p>
-<p>Locate your OneDrive by typing in the R Console:<br></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="To set the working directory in Windows (video)">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-To set the working directory in Windows (video)
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>For Windows, use: <code>setwd("O:/")</code><br> or <code>setwd("C:/Users/your k number")</code>, depending on your set up.<br> The following gif uses the second option<br><br> <a href="How%20to%20set%20your%20working%20directory%20in%20Windows.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Seting the working directory in Windows (click on the video to enlarge it)"><img src="How%20to%20set%20your%20working%20directory%20in%20Windows.gif" class="img-fluid" alt="Seting the working directory in Windows (click on the video to enlarge it)"></a></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="To set the working directory on a mac (video)">
+<p><strong>2. Global Settings</strong><br>You can set your preferred default ‘Global’ settings that RStudio will always use (<em>eg</em> font, text wrapping, default working directory etc):</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Change global settings to your preferences">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-To set the working directory on a mac (video)
+Change global settings to your preferences
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>For a Mac, use: <code>setwd("~/")</code>.<br><br> <a href="setwd_mac.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Setting the working directory on a mac (click on the video to enlarge it)"><img src="setwd_mac.gif" class="img-fluid" alt="Setting the working directory on a mac (click on the video to enlarge it)"></a></p>
-</div>
-</div>
-</div>
-<p>Then click the ‘More’ cog icon in the File Directory and select <em>Go to working directory</em> and find your OneDrive folder in the File Directory in RStudio <br></p>
-<ul>
-<li><p>Create a new folder entitled <em>LS5022</em> (using the +Folder option in the File Directory) in which you can save all work on this module. In the LS5022 folder, create a sub-folder entitled <em>Statistics</em> <br></p></li>
-<li><p><strong>Set this as your working directory</strong> using the cog icon and then select ‘<em>Set As Working Directory</em>’. <br><br></p></li>
-</ul>
-<p><strong>a) For University computers:</strong><br> You will need to do this each time you open RStudio <br><br> <strong>b) Using your own laptop:</strong><br> When you first use RStudio, you can set Global default settings which will be stored for when you next use RStudio. <br></p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Change global settings to your preferences: font, wrapping of text, default working directory etc
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
 <p>Go to <strong>Tools &gt; Global Options…</strong></p>
 <ul>
-<li><p>In <strong>Appearance</strong>, select font etc.</p></li>
-<li><p>In <strong>General</strong>, set the default working directory by browsing to locate your <em>LS5022/Statistics</em> folder in OneDrive).<br> Ensuring that ‘<em>Restore most recently opened project at startup</em>’ and ‘<em>Restore previously open source documents at startup</em>’ are ticked means that what you did last time will open. This can be a useful place to start each time you use RStudio.</p></li>
-<li><p>Select <strong>Code</strong> and then select ‘<em>Use native pipe operator</em>’ and also select ‘<em>soft-wrap R source files</em>’ <br> Click on <em>Apply</em> and then <em>OK</em> and close the Global Options box.<br> <br></p></li>
+<li><p>In <strong>General</strong>, you can set your default working directory by browsing to locate your the folder in which you want to work and save files. On the cloud version, this will usually be <code>/cloud/project</code>.<br> Ensuring that ‘<em>Restore most recently opened project at startup</em>’ and ‘<em>Restore previously open source documents at startup</em>’ are ticked means that what you did last time will open. This can be a useful place to start each time you use RStudio, but you might prefer it if this does not happen, so simply untick them.</p></li>
+<li><p>Select <strong>Code</strong> and then select ‘<em>Use native pipe operator</em>’ and also select ‘<em>soft-wrap R source files</em>’ <br> Click on <em>Apply</em>.</p></li>
+<li><p>In <strong>Appearance</strong>, select font etc. and then <em>OK</em> to close the Global Options box.</p></li>
 </ul>
-<p>These settings will be saved on your laptop version of RStudio and your default working directory will be the <em>LS5022/Statistics</em> folder on your OneDrive whenever you open RStudio.<br><br></p>
+<p>These settings will be saved in RStudio and used whenever you open it.<br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="global_options.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Global options"><img src="global_options.gif" class="img-fluid figure-img" alt="Global options"></a></p>
@@ -218,39 +217,39 @@ Change global settings to your preferences: font, wrapping of text, default work
 </div>
 </div>
 </div>
-<p><br> Check your working directory:</p>
+<p><br> You can always check what your working directory is by typing this simple code into the R Console and running it (press ‘Enter’):</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/richardtcook/Library/CloudStorage/OneDrive-KingstonUniversity/LS5022 Research skills (new)/Biostatistics lectures &amp; workshops/Session 1/Quarto files"</code></pre>
 </div>
-</div>
-<p><br> <br> <strong>2. To start an R session, open an R Script using the green ‘+’ sign at the top left of RStudio</strong></p>
+<p><br> <br> <strong>3. To start a new R session, open an R Script using the green ‘+’ sign at the top left of RStudio</strong></p>
 <p>You are now ready to use RStudio.</p>
-<p>In the next tabs, you will do some simple calculations in R, import an Excel file to R and carry out an independent samples t-test on the data. The code will also generate a bar chart.</p>
-<p>This is just an example of how it works, and we will go through this slowly in later sessions so that you can do this yourself.<br><br></p>
+<p>In the next tabs, you will do some simple calculations in R and import an Excel file to R. Most of the work that we will do will involve carrying out statistocal analyses on data imported from Excel files.</p>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>The first thing I want to do is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br></p>
 <div class="callout callout-style-simple callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Install packages: click to expand/collapse
+Install packages (click to expand/collapse):
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>You will need to install the following packages for today by running the following code lines. Copy and paste them into the Script editor and run them:<br> <code>install.packages("tidyverse")</code><br> <code>install.packages("psych")</code><br> <code>install.packages("rio")</code><br> <code>install.packages("rstatix")</code><br> <code>install.packages("ggthemes")</code><br> <br> If you are using your own laptop, these packages will be saved in your laptop version of RStudio (although you will need to re-install them if you upgrade to a new version of RStudio in the future).<br> <br> If you are using a university computer. you will need to install the packages you want to use each time. <br></p>
+<p>You will need to install the following packages for today by running the following code line. Copy and paste them into the Script editor and run them:<br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"rio"</span>, <span class="st">"psych"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>These packages will be saved in RStudio to be used in future.<br> <em>NB</em> You can always check which packages you have installed by clicking on ‘Packages’ in the File Directory window.</p>
 </div>
 </div>
 </div>
-<p>Once packages are installed you call them by using the library() function:<br></p>
+<p>Once packages are installed you call them by using the <code>library()</code> function:<br> <em>NB</em> You need to do this every time you start a new session.</p>
 <div class="callout callout-style-simple callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -259,49 +258,105 @@ Call the packages to use them in your session
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rio)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rstatix)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)         </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rio)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
-<p><em>NB</em> If R ever says that a package does not exist, it means you need to install it before loading it with library().<br><br> If you want to check what packages are installed, the File Directory window has a tab called ‘Packages’. Installed packages are listed. Packages that have been loaded have a tick by them. <br> <br></p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p><em>NB</em> If R ever says that a package does not exist, it means you need to install it before loading it with <code>library()</code>.<br><br> If you want to check what packages are installed, the File Directory window has a tab called ‘Packages’. Installed packages are listed. Packages that have been loaded have a tick by them. <br> <br></p>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>CARRY OUT THE FOLLOWING SIMPLE EXERCISES BY TYPING (OR COPYING &amp; PASTING) THE CODE IN THE GREY BOXES BELOW INTO THE R SCRIPT EDITOR:</strong></p>
+</div>
+</div>
+</div>
+<p><strong>1. To create an object called ‘greeting’ with text</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a>greeting <span class="ot">&lt;-</span> <span class="st">"Hello World"</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2">2</button><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a>greeting</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="1">Store ‘Hello World’ into an object called ‘greeting’</span>
+</dd>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="2">To see the content of the object, type its name. <br></span>
+</dd>
+</dl>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Click to see the output
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>CARRY OUT THE FOLLOWING SIMPLE EXERCISES BY TYPING (OR COPYING &amp; PASTING) THE CODE IN THE GREY BOXES BELOW INTO THE R SCRIPT EDITOR:</strong></p>
-</div>
-</div>
-<p><strong>1.</strong> To create an object called ‘greeting’ with text</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-1" class="code-annotation-target"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a>greeting <span class="ot">&lt;-</span> <span class="st">"Hello World"</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-2" class="code-annotation-target"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>greeting</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Hello World"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br> <strong>2. Some basic arithmetic!</strong> <br> Addition: the calculation is stored in an object called ‘add’</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-1" class="code-annotation-target"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a>add <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">+</span><span class="dv">4</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-2" class="code-annotation-target"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>add</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="1" data-code-annotation="1">Store ‘Hello World’ into an object called ‘greeting’</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="1" data-code-annotation="1">Here, the sum of 2+4 is stored in an object called ‘add’</span>
 </dd>
 <dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="2" data-code-annotation="2">To see the content of the object, type its name. <br></span>
+<span data-code-cell="annotated-cell-3" data-code-lines="2" data-code-annotation="2">To see the content of the ‘add’ object type its name.</span>
 </dd>
 </dl>
 </div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click to see the output
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br>Division:<br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>div <span class="ot">&lt;-</span> <span class="dv">6</span><span class="sc">/</span><span class="dv">2</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>div</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
@@ -317,25 +372,25 @@ Click to see the output
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Hello World"</code></pre>
+<pre><code>[1] 3</code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p><br> <strong>2.</strong> Some basic arithmetic! The calculation is stored in an object called ‘add’</p>
+<p><br> <strong>3. Create a vector and store in an object called vector1</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-1" class="code-annotation-target"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a>add <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">+</span><span class="dv">4</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>add</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-1" class="code-annotation-target"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a>vector1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">14</span>,<span class="dv">15</span>,<span class="dv">21</span>,<span class="dv">25</span>,<span class="dv">34</span>,<span class="dv">35</span>)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>vector1</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="1" data-code-annotation="1">Here, the sum of 2+4 is stored in an object called ‘add’</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="1" data-code-annotation="1">The numbers are ‘concatenated’ into a column and stored in an object called ‘vector1’</span>
 </dd>
-<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="2" data-code-annotation="2">To see the content of the ‘add’ object type its name.</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="2" data-code-annotation="2">Type the name of the object to see its contents.</span>
 </dd>
 </dl>
 </div>
@@ -354,16 +409,39 @@ Click to see the output
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 6</code></pre>
+<pre><code> [1]  2  4  5  6  7  8 10 11 14 15 21 25 34 35</code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p><br>Division:<br></p>
+<p><br> <strong>4. Calculate mean and standard deviation</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>div <span class="ot">&lt;-</span> <span class="dv">6</span><span class="sc">/</span><span class="dv">2</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>div</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-1" class="code-annotation-target"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a>mean1 <span class="ot">&lt;-</span> <span class="fu">mean</span>(vector1)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2">2</button><span id="annotated-cell-6-2" class="code-annotation-target"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>mean1</span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="3">3</button><span id="annotated-cell-6-4" class="code-annotation-target"><a href="#annotated-cell-6-4" aria-hidden="true" tabindex="-1"></a>sd1 <span class="ot">&lt;-</span> <span class="fu">sd</span>(vector1)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="4">4</button><span id="annotated-cell-6-5" class="code-annotation-target"><a href="#annotated-cell-6-5" aria-hidden="true" tabindex="-1"></a>sd1</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="1" data-code-annotation="1">Use the <code>mean()</code> function to calculate the mean of vector1 &amp; store it in <code>mean1</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="2" data-code-annotation="2">See the mean value in <code>mean1</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="4" data-code-annotation="3">Use the <code>sd()</code> function to calculate the standard deviation of <code>vector1</code> &amp; store it in <code>sd1</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="5" data-code-annotation="4">See the sd value in <code>sd1</code></span>
+</dd>
+</dl>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
@@ -376,71 +454,6 @@ Click to see the output
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><br> <strong>3.</strong> Create a vector and store in an object called vector1</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-1" class="code-annotation-target"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a>vector1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">14</span>,<span class="dv">15</span>,<span class="dv">21</span>,<span class="dv">25</span>,<span class="dv">34</span>,<span class="dv">35</span>)</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2">2</button><span id="annotated-cell-6-2" class="code-annotation-target"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>vector1</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-6" data-code-lines="1" data-code-annotation="1">The numbers are ‘concatenated’ into a column and stored in an object called ‘vector1’</span>
-</dd>
-<dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-6" data-code-lines="2" data-code-annotation="2">Type the name of the object to see its contents.</span>
-</dd>
-</dl>
-</div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Click to see the output
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  2  4  5  6  7  8 10 11 14 15 21 25 34 35</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><br> 4. Calculate mean and standard deviation</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mean1 <span class="ot">&lt;-</span> <span class="fu">mean</span>(vector1)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mean1</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>sd1 <span class="ot">&lt;-</span> <span class="fu">sd</span>(vector1)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>sd1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Click to see the output
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Mean:</p>
 <div class="cell">
@@ -457,14 +470,13 @@ Click to see the output
 </div>
 </div>
 </div>
-<p><br> 5. Get descriptive statistics of the vector data</p>
+<p><br> <strong>5. Get descriptive statistics of the vector1 data</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>vector1 <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">describe</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>vector1 <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">describe</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><br> Here, mean(), sd() and describe() are called <strong>functions</strong>. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br></p>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -473,7 +485,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
@@ -538,13 +550,22 @@ Click to see the output
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p><strong>1. Import an Excel file (in ‘tidy’ format)</strong></p>
+<p><br> Here, <code>mean()</code>, <code>sd()</code> and <code>describe()</code> are called <strong>functions</strong>. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br> <br> <br> <strong>6. Save your r file on the cloud in your working directory.</strong><br> Once saved, you can download it to your own laptop:<br></p>
 <ul>
-<li><p>Download the file called <em>2-sample_cholesterol.xlsx</em> from Canvas and save it to your LS5022 folder in your OneDrive.</p></li>
-<li><p>In RStudio, locate the file in the file directory and set this as your working directory by clicking on the cog icon.<br></p></li>
+<li>Click on the More cog icon and select <code>Export...</code><br></li>
+<li>Choose a name and save it. It will save to your Downloads folder on your computer.<br>
+</li>
+<li>Move it to a folder where you are saving your work for this module. <br><br></li>
 </ul>
+<p><strong>7. Import an Excel file (in ‘tidy’ format)</strong></p>
+<ul>
+<li>Download the file called <em>2-sample_cholesterol.xlsx</em> from Canvas to your Downloads folder.</li>
+<li>In RStudio cloud, select <code>Upload</code> in the Files Directory.</li>
+<li>Check the directory where it is to be saved (change it if necessary with ‘Browse…’)</li>
+<li>Choose your file by browsing to the Downloads folder and selecting the xlsx file</li>
+<li>Click ‘OK’ and you should see the excel file in your working directory in RStudio</li>
+</ul>
+<p><em>NB</em> if you are using your own laptop, you can simply locate the Downloads folder in the Files directory and move the file to your working directory using the ‘More’ cog icon and ‘Move…’ <br></p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -555,14 +576,15 @@ Click to see the output
 </div>
 </div>
 <ul>
-<li>Now import the xlsx file and store it as a dataframe called <em>chol_df</em> <br>This code uses the rio package to use the import() function. <br>It loads the Excel file and stores the data in a data frame object called ‘<em>chol_df</em>’<br></li>
+<li>Now import the xlsx file and store it as a dataframe called <em>chol_df</em> <br></li>
 </ul>
+<p>This code uses the rio package to use the <code>import()</code> function. <br>It loads the Excel file and stores the data in a data frame object called ‘<em>chol_df</em>’<br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>chol_df <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">"2-sample_cholesterol.xlsx"</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(chol_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>chol_df <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">"2-sample_cholesterol.xlsx"</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(chol_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="Click to see the output">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -571,7 +593,7 @@ Click to see the output
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -581,17 +603,24 @@ Click to see the output
 </div>
 </div>
 </div>
-<p><em>NOTE</em>: this is saved as a data frame. This is the type of object that we will be working with.</p>
-<p><br><strong>2. Save the chol_df object as an RData file in your desired folder</strong> <br>(<em>NB</em> This code will save the file to wherever your current working directory is set).</p>
+<p><em>NOTE</em>: this is saved as a data frame. This is the type of object that we will be working with.<br> <br> You should now see the chol_df object in the Environment window (top right) in RStudio. <br> You can view it by simply clicking on the object name in the Environment.</p>
+<p><br><strong>8. Save the chol_df object as an RData file in your desired folder</strong> <br>(<em>NB</em> This code will save the file to wherever your current working directory is set).</p>
 <p>This means the data frame is saved and you don’t have to import it every time you open RStudio! Just type in R (or just copy and paste the script):</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(chol_df, <span class="at">file=</span><span class="st">"chol_df.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-1" class="code-annotation-target"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(chol_df, <span class="at">file=</span><span class="st">"chol_df.RData"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-9" data-code-lines="1" data-code-annotation="1">Saves the chol_df dataframe as an RData file called chol_df.RData</span>
+</dd>
+</dl>
 </div>
-<p><br>To open the RData file in future, simply type</p>
+</div>
+<p><br>To open the RData file in future to get the dataframe, simply type</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="at">file =</span> <span class="st">"chol_df.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="at">file =</span> <span class="st">"chol_df.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><br><strong>3. Finally, save this R file by clicking on the Save icon in RStudio</strong>.<br>It will save to your working directory.</p>
 </div>
 </div>
 </div>
