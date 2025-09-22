@@ -64,6 +64,7 @@ Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/)
 #| lightbox: true
 knitr::include_graphics("RStudio page.png")
 ```
+
 <br>
 
 1.  Install R
@@ -133,8 +134,27 @@ You are now ready to use RStudio.
 In the next tabs, you will do some simple calculations in R and import an Excel file to R. Most of the work that we will do will involve carrying out statistical analyses on data imported from Excel files.
 
 ## Some simple things!
+::: {.callout-tip appearance="default" icon="false"}
+**TO START THIS NEW SESSION:**
+:::
 
-The first thing I want to do is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br>
+We will be using the project that you have already created in Posit cloud called **'LS5022 Biostatistics'**.
+
+- Create a new folder within the project called 'Session 1' where we will store today's work.
+
+```{r}
+#| label: fig-newFolder_png
+#| out-width: "75%"
+#| fig-height: 3.5
+#| fig-cap: "Create a new folder"
+#| echo: false
+#| lightbox: true
+knitr::include_graphics("NewFolder.png")
+```
+
+-   Next, set this as your working directory.
+-   Open a new R Script file in the code editor.
+-  The first thing I want to do in R is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br>
 
 ::: {.callout-important appearance="simple" collapse="true"}
 ## Install packages (click to expand/collapse):
@@ -153,7 +173,7 @@ install.packages(c("tidyverse", "rio", "psych"))
 These packages will be saved in RStudio to be used in future.<br> *NB* You can always check which packages you have installed by clicking on 'Packages' in the File Directory window.
 :::
 
-Once packages are installed you call them by using the `library()` function:<br> *NB* You need to do this every time you start a new session.
+- Once packages are installed you call them in R by using the `library()` function:<br> *NB* You need to do this every time you start a new session.
 
 ::: {.callout-important appearance="simple" collapse="true"}
 ## Call the packages to use them in your session
@@ -170,28 +190,11 @@ library(psych)
 ```
 :::
 
-*NB* If R ever says that a package does not exist, it means you need to install it before loading it with `library()`.<br><br> If you want to check what packages are installed, the File Directory window has a tab called 'Packages'. Installed packages are listed. Packages that have been loaded have a tick by them. <br> <br>
+*NB* If R ever says that a package does not exist, it means you need to install it before loading it with `library()`.<br><br> If you want to check what packages are installed, the File Directory window has a tab called 'Packages'. Installed packages are listed. Packages that have been loaded have a tick by them. <br><br><br>
 
 ::: {.callout-tip appearance="simple" icon="false"}
 **CARRY OUT THE FOLLOWING SIMPLE EXERCISES BY TYPING (OR COPYING & PASTING) THE CODE IN THE GREY BOXES BELOW INTO THE R SCRIPT EDITOR:**
 :::
-
-- You have already created a project called **'LS5022 Biostatistics'** in Posit Cloud. Now create a new folder within the project called 'Session 1' where we will store today's work.
-
-```{r}
-#| label: fig-newFolder_png
-#| out-width: "75%"
-#| fig-height: 3.5
-#| fig-cap: "Create a new folder"
-#| echo: false
-#| lightbox: true
-knitr::include_graphics("NewFolder.png")
-```
-
-- Next, set this as your working directory.
-- Open a new R Script file in the code editor.
-<br>
-<br>
 
 **1. To create an object called 'greeting' with text**
 
@@ -359,38 +362,25 @@ vector1 |>
 
 ```{r}
 #| label: RStudio_settings.png
-#| out.width: "70%"
+#| out-width: "60%"
 #| echo: false
 knitr::include_graphics("RStudio_settings.png")
 ```
 
--   Now import the xlsx file and store it as a dataframe called *chol_df* <br>
-
-This code uses the rio package to use the `import()` function. <br>It loads the Excel file and stores the data in a data frame object called '*chol_df*'<br>
+-   Now import the xlsx file and store it as a dataframe called *chol_df*.<br>The following code uses the rio package to use the `import()` function.<br>It loads the Excel file and stores the data in a data frame object called '*chol_df*'<br>
 
 ```{r}
 #| label: file_import
 #| echo: TRUE
-#| eval: false
+#| eval: TRUE
 chol_df <- import("2-sample_cholesterol.xlsx")
-class(chol_df)
 ```
 
-::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
-```{r}
-#| label: file_import1
-#| echo: false
-#| eval: true
-chol_df <- import("2-sample_cholesterol.xlsx")
-class(chol_df)
-```
-:::
+*NOTE*: this is saved as a `data frame`. This is the type of object that we will be working with.<br> <br> You should now see the chol_df object in the Environment window (top right) in RStudio. <br> You can view it by simply clicking on the object name in the Environment.
 
-*NOTE*: this is saved as a data frame. This is the type of object that we will be working with.<br> <br> You should now see the chol_df object in the Environment window (top right) in RStudio. <br> You can view it by simply clicking on the object name in the Environment.
+<br>**8. Save the chol_df dataframe as an RData file in your desired folder** <br>(*NB* This code will save the file to wherever your current working directory is set).
 
-<br>**8. Save the chol_df object as an RData file in your desired folder** <br>(*NB* This code will save the file to wherever your current working directory is set).
-
-This means the data frame is saved and you don't have to import it every time you open RStudio! Just type in R (or just copy and paste the script):
+This means the data frame is saved and you don't have to import the excel file every time you open RStudio! Just type in R (or just copy and paste the script):
 
 ```{r}
 #| label: save_RData
