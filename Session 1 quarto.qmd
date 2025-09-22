@@ -21,20 +21,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Downloading & Preparing R and RStudio {.tabset}
 
 ::: {.callout-note appearance="simple" collapse="true" title="Introduction" icon="true"}
-This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work).
-<br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions.  However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop.<br>
-You can, of course, also bring your own laptop to the workshops and work on that there.
-<br><br>
-The 1st tab below shows you how to set up RStudio on the cloud.<br>
-The 2nd tab shows you how to set up R and RStudio on your own laptop.
-<br><br>
-*NB* You can use RStudio on a university computer from AppsAnywhere, but it is not ideal.  the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.
+This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work). <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop.<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> *NB* You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.
 :::
 
-:::::::::::::::: panel-tabset
+:::::::::::::: panel-tabset
 ## Install RStudio (Cloud)
 
-This is the version of RStudio that we will use in the workshops.  However, you should download and save all of the files we use to your own laptop and practice using RStudio on your laptop (see next tab).
+This is the version of RStudio that we will use in the workshops. However, you should download and save all of the files we use to your own laptop and practice using RStudio on your laptop (see next tab).
 
 Go to [Posit Cloud (click on this link)](https://posit.cloud/)<br><br>
 
@@ -52,25 +45,33 @@ Go to [Posit Cloud (click on this link)](https://posit.cloud/)<br><br>
 knitr::include_graphics("Posit cloud.png")
 ```
 
-- Select '**Get Started**'<br><br>
-- You will see a range of plan options: select '**Cloud Free**' by selecting "Learn more' and then sign up to create your own account.  In future, use your ID details and password to login.<br><br>
-- Select the blue icon in the top right corner that says '**New Project**'. Create a new RStudio project called '**LS5022 Biostatistics**' (you are allowed 25 projects on the free plan).  It is here that we will work and save our files in all of the workshops.
-<br>
-
+-   Select '**Get Started**'<br><br>
+-   You will see a range of plan options: select '**Cloud Free**' by selecting "Learn more' and then sign up to create your own account. In future, use your ID details and password to login.<br><br>
+-   Select the blue icon in the top right corner that says '**New Project**'. Create a new RStudio project called '**LS5022 Biostatistics**' (you are allowed 25 projects on the free plan). It is here that we will work and save our files in all of the workshops. <br>
 
 ## Install RStudio (Laptop)
 
 Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/) <br><br>
 
-![The RStudio web site](RStudio page.png){.lightbox}
-<br><br>
+```{r}
+#| label: fig-RStudio_web_png
+#| fig-cap: "RStudio web site"
+#| fig-alt: "The RStudio windows look like this by default"
+#| out.width: "150%"
+#| fig-height: 3.5
+#| echo: false
+#| column: page-right
+#| lightbox: true
+knitr::include_graphics("RStudio page.png")
+```
+<br>
 
-1. Install R
+1.  Install R
     -   Select the version for your computer (mac or Windows)
     -   Click on the first link for *R-(followed by the latest version number).pkg* to download the installation package
         -   For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select 'About this mac'.
     -   Follow the installation instructions<br><br>
-2. Install RStudio
+2.  Install RStudio
 
 *Note*: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R.
 
@@ -94,21 +95,18 @@ knitr::include_graphics("RStudio.png")
 
 Click on the green '+' symbol at the top left of the screen and select 'R Script'. You will now see 4 areas of the RStudio page:
 
-* The **Code Editor** at the top left area where you will do most of your work and store your code. Here you can write R code and notes to yourself. You can also save the R code and notes in an .R file
-* The area below it (bottom left) is the **R Console**, and is essentially like R without RStudio. It is where the R code that you type in the Editor above and its output appears when you run the code.
-* Top right is the **Workspace environment** where you can see opened objects and data.
-* At the bottom right is the the **File Directory** and where you can navigate to your desired folder, create and delete folders and also see installed packages. Use the Files tab to select the folder in which you wish to save your work.
-  + Then click on the More cog and select `Set as Working Directory`. This is now your working folder (you will see the code run in the R Console).
-<br><br>
-
+-   The **Code Editor** at the top left area where you will do most of your work and store your code. Here you can write R code and notes to yourself. You can also save the R code and notes in an .R file
+-   The area below it (bottom left) is the **R Console**, and is essentially like R without RStudio. It is where the R code that you type in the Editor above and its output appears when you run the code.
+-   Top right is the **Workspace environment** where you can see opened objects and data.
+-   At the bottom right is the the **File Directory** and where you can navigate to your desired folder, create and delete folders and also see installed packages. Use the Files tab to select the folder in which you wish to save your work.
+    -   Then click on the More cog and select `Set as Working Directory`. This is now your working folder (you will see the code run in the R Console). <br><br>
 
 **2. Global Settings**<br>You can set your preferred default 'Global' settings that RStudio will always use (*eg* font, text wrapping, default working directory etc):
 
 ::: {.callout-note icon="false" collapse="true" title="Change global settings to your preferences"}
-
 Go to **Tools \> Global Options...**
 
--   In **General**, you can set your default working directory by browsing to locate your the folder in which you want to work and save files.  On the cloud version, this will usually be `/cloud/project`.<br> Ensuring that '*Restore most recently opened project at startup*' and '*Restore previously open source documents at startup*' are ticked means that what you did last time will open. This can be a useful place to start each time you use RStudio, but you might prefer it if this does not happen, so simply untick them.
+-   In **General**, you can set your default working directory by browsing to locate your the folder in which you want to work and save files. On the cloud version, this will usually be `/cloud/project`.<br> Ensuring that '*Restore most recently opened project at startup*' and '*Restore previously open source documents at startup*' are ticked means that what you did last time will open. This can be a useful place to start each time you use RStudio, but you might prefer it if this does not happen, so simply untick them.
 
 -   Select **Code** and then select '*Use native pipe operator*' and also select '*soft-wrap R source files*' <br> Click on *Apply*.
 
@@ -132,8 +130,7 @@ getwd()
 
 You are now ready to use RStudio.
 
-In the next tabs, you will do some simple calculations in R and import an Excel file to R.  Most of the work that we will do will involve carrying out statistocal analyses on data imported from Excel files.
-
+In the next tabs, you will do some simple calculations in R and import an Excel file to R. Most of the work that we will do will involve carrying out statistical analyses on data imported from Excel files.
 
 ## Some simple things!
 
@@ -152,12 +149,11 @@ You will need to install the following packages for today by running the followi
 #| eval: false
 install.packages(c("tidyverse", "rio", "psych"))
 ```
-These packages will be saved in RStudio to be used in future.<br>
-*NB* You can always check which packages you have installed by clicking on 'Packages' in the File Directory window.
+
+These packages will be saved in RStudio to be used in future.<br> *NB* You can always check which packages you have installed by clicking on 'Packages' in the File Directory window.
 :::
 
-Once packages are installed you call them by using the `library()` function:<br>
-*NB* You need to do this every time you start a new session.
+Once packages are installed you call them by using the `library()` function:<br> *NB* You need to do this every time you start a new session.
 
 ::: {.callout-important appearance="simple" collapse="true"}
 ## Call the packages to use them in your session
@@ -179,6 +175,23 @@ library(psych)
 ::: {.callout-tip appearance="simple" icon="false"}
 **CARRY OUT THE FOLLOWING SIMPLE EXERCISES BY TYPING (OR COPYING & PASTING) THE CODE IN THE GREY BOXES BELOW INTO THE R SCRIPT EDITOR:**
 :::
+
+- You have already created a project called **'LS5022 Biostatistics'** in Posit Cloud. Now create a new folder within the project called 'Session 1' where we will store today's work.
+
+```{r}
+#| label: fig-newFolder_png
+#| out-width: "75%"
+#| fig-height: 3.5
+#| fig-cap: "Create a new folder"
+#| echo: false
+#| lightbox: true
+knitr::include_graphics("NewFolder.png")
+```
+
+- Next, set this as your working directory.
+- Open a new R Script file in the code editor.
+<br>
+<br>
 
 **1. To create an object called 'greeting' with text**
 
@@ -202,8 +215,7 @@ greeting
 ```
 :::
 
-<br> **2. Some basic arithmetic!** <br>
-Addition: the calculation is stored in an object called 'add'
+<br> **2. Some basic arithmetic!** <br> Addition: the calculation is stored in an object called 'add'
 
 ```{r}
 #| label: add
@@ -281,10 +293,11 @@ mean1  #<2>
 sd1 <- sd(vector1)  #<3>
 sd1  #<4>
 ```
-1. Use the `mean()` function to calculate the mean of vector1 & store it in `mean1`
-2. See the mean value in `mean1`
-3. Use the `sd()` function to calculate the standard deviation of `vector1` & store it in `sd1`
-4. See the sd value in `sd1`
+
+1.  Use the `mean()` function to calculate the mean of vector1 & store it in `mean1`
+2.  See the mean value in `mean1`
+3.  Use the `sd()` function to calculate the standard deviation of `vector1` & store it in `sd1`
+4.  See the sd value in `sd1`
 
 ::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
 Mean:
@@ -328,27 +341,21 @@ vector1 |>
 ```
 :::
 
-<br> Here, `mean()`, `sd()` and `describe()` are called **functions**. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br>
-<br>
-<br>
-**6. Save your r file on the cloud in your working directory.**<br>
-Once saved, you can download it to your own laptop:<br>
+<br> Here, `mean()`, `sd()` and `describe()` are called **functions**. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br> <br> <br> **6. Save your r file on the cloud in your working directory.**<br> Once saved, you can download it to your own laptop:<br>
 
-- Click on the More cog icon and select `Export...`<br>
-- Choose a name and save it.  It will save to your Downloads folder on your computer.  
-- Move it to a folder where you are saving your work for this module.
-<br><br>
+-   Click on the More cog icon and select `Export...`<br>
+-   Choose a name and save it. It will save to your Downloads folder on your computer.\
+-   Move it to a folder where you are saving your work for this module. <br><br>
 
 **7. Import an Excel file (in 'tidy' format)**
 
-- Download the file called *2-sample_cholesterol.xlsx* from Canvas to your Downloads folder.
-- In RStudio cloud, select `Upload` in the Files Directory.
-- Check the directory where it is to be saved (change it if necessary with 'Browse...')
-- Choose your file by browsing to the Downloads folder and selecting the xlsx file
-- Click 'OK' and you should see the excel file in your working directory in RStudio
+-   Download the file called *2-sample_cholesterol.xlsx* from Canvas to your Downloads folder.
+-   In RStudio cloud, select `Upload` in the Files Directory.
+-   Check the directory where it is to be saved (change it if necessary with 'Browse...')
+-   Choose your file by browsing to the Downloads folder and selecting the xlsx file
+-   Click 'OK' and you should see the excel file in your working directory in RStudio
 
-*NB* if you are using your own laptop, you can simply locate the Downloads folder in the Files directory and move the file to your working directory using the 'More' cog icon and 'Move...'
-<br>
+*NB* if you are using your own laptop, you can simply locate the Downloads folder in the Files directory and move the file to your working directory using the 'More' cog icon and 'Move...' <br>
 
 ```{r}
 #| label: RStudio_settings.png
@@ -357,8 +364,7 @@ Once saved, you can download it to your own laptop:<br>
 knitr::include_graphics("RStudio_settings.png")
 ```
 
-
-- Now import the xlsx file and store it as a dataframe called *chol_df* <br>
+-   Now import the xlsx file and store it as a dataframe called *chol_df* <br>
 
 This code uses the rio package to use the `import()` function. <br>It loads the Excel file and stores the data in a data frame object called '*chol_df*'<br>
 
@@ -380,10 +386,7 @@ class(chol_df)
 ```
 :::
 
-*NOTE*: this is saved as a data frame. This is the type of object that we will be working with.<br>
-<br>
-You should now see the chol_df object in the Environment window (top right) in RStudio. <br>
-You can view it by simply clicking on the object name in the Environment.
+*NOTE*: this is saved as a data frame. This is the type of object that we will be working with.<br> <br> You should now see the chol_df object in the Environment window (top right) in RStudio. <br> You can view it by simply clicking on the object name in the Environment.
 
 <br>**8. Save the chol_df object as an RData file in your desired folder** <br>(*NB* This code will save the file to wherever your current working directory is set).
 
@@ -396,7 +399,8 @@ This means the data frame is saved and you don't have to import it every time yo
 #| message: FALSE
 save(chol_df, file="chol_df.RData") #<1>
 ```
-1. Saves the chol_df dataframe as an RData file called chol_df.RData
+
+1.  Saves the chol_df dataframe as an RData file called chol_df.RData
 
 <br>To open the RData file in future to get the dataframe, simply type
 
@@ -406,5 +410,4 @@ save(chol_df, file="chol_df.RData") #<1>
 #| results: FALSE
 load(file = "chol_df.RData")
 ```
-
-::::::::::::::::
+::::::::::::::

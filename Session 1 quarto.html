@@ -144,9 +144,23 @@ Figure&nbsp;1: Posit Cloud
 <li>Select the blue icon in the top right corner that says ‘<strong>New Project</strong>’. Create a new RStudio project called ‘<strong>LS5022 Biostatistics</strong>’ (you are allowed 25 projects on the free plan). It is here that we will work and save our files in all of the workshops. <br></li>
 </ul>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-1-2" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Go to <a href="https://posit.co/download/rstudio-desktop/">RStudio (click on this link)</a> <br><br></p>
-<p><a href="RStudio%20page.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="The RStudio web site"><img src="RStudio%20page.png" class="img-fluid" alt="The RStudio web site"></a> <br><br></p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-RStudio_web_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="RStudio%20page.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: RStudio web site"><img src="RStudio%20page.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: RStudio web site
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
 <ol type="1">
 <li>Install R
 <ul>
@@ -163,16 +177,16 @@ Figure&nbsp;1: Posit Cloud
 </div>
 <div id="tabset-1-3" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p><strong>1. RStudio looks like this</strong><br></p>
-<p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;2</a> shows the arrangement of the four windows in RStudio:</p>
+<p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;3</a> shows the arrangement of the four windows in RStudio:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-RStudio_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;2: RStudio"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: RStudio"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: RStudio
+Figure&nbsp;3: RStudio
 </figcaption>
 </figure>
 </div>
@@ -223,7 +237,7 @@ Change global settings to your preferences
 </div>
 <p><br> <br> <strong>3. To start a new R session, open an R Script using the green ‘+’ sign at the top left of RStudio</strong></p>
 <p>You are now ready to use RStudio.</p>
-<p>In the next tabs, you will do some simple calculations in R and import an Excel file to R. Most of the work that we will do will involve carrying out statistocal analyses on data imported from Excel files.</p>
+<p>In the next tabs, you will do some simple calculations in R and import an Excel file to R. Most of the work that we will do will involve carrying out statistical analyses on data imported from Excel files.</p>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>The first thing I want to do is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br></p>
@@ -279,6 +293,27 @@ Call the packages to use them in your session
 </div>
 </div>
 </div>
+<ul>
+<li>You have already created a project called <strong>‘LS5022 Biostatistics’</strong> in Posit Cloud. Now create a new folder within the project called ‘Session 1’ where we will store today’s work.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-newFolder_png" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-newFolder_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="NewFolder.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;4: Create a new folder"><img src="NewFolder.png" class="img-fluid figure-img" style="width:75.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-newFolder_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Create a new folder
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Next, set this as your working directory.</li>
+<li>Open a new R Script file in the code editor. <br> <br></li>
+</ul>
 <p><strong>1. To create an object called ‘greeting’ with text</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a>greeting <span class="ot">&lt;-</span> <span class="st">"Hello World"</span></span>
