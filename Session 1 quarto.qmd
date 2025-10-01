@@ -25,7 +25,7 @@ This first workshop aims to introduce you to R and RStudio. R is the programming
 :::
 
 :::::::::::::: panel-tabset
-## Install RStudio (Cloud)
+## Set up RStudio (Cloud)
 
 This is the version of RStudio that we will use in the workshops. However, you should download and save all of the files we use to your own laptop and practice using RStudio on your laptop (see next tab).
 
@@ -134,13 +134,14 @@ You are now ready to use RStudio.
 In the next tabs, you will do some simple calculations in R and import an Excel file to R. Most of the work that we will do will involve carrying out statistical analyses on data imported from Excel files.
 
 ## Some simple things!
+
 ::: {.callout-tip appearance="default" icon="false"}
 **TO START THIS NEW SESSION:**
 :::
 
 We will be using the project that you have already created in Posit cloud called **'LS5022 Biostatistics'**.
 
-- Create a new folder within the project called 'Session 1' where we will store today's work.
+-   Create a new folder within the project called 'Session 1' where we will store today's work.
 
 ```{r}
 #| label: fig-newFolder_png
@@ -154,7 +155,7 @@ knitr::include_graphics("NewFolder.png")
 
 -   Next, set this as your working directory.
 -   Open a new R Script file in the code editor.
--  The first thing I want to do in R is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br>
+-   The first thing I want to do in R is to load some packages that enhance R for what we are about to do. R has a base language, but packages significantly enhance and add power to what R can do.<br>
 
 ::: {.callout-important appearance="simple" collapse="true"}
 ## Install packages (click to expand/collapse):
@@ -173,7 +174,7 @@ install.packages(c("tidyverse", "rio", "psych"))
 These packages will be saved in RStudio to be used in future.<br> *NB* You can always check which packages you have installed by clicking on 'Packages' in the File Directory window.
 :::
 
-- Once packages are installed you call them in R by using the `library()` function:<br> *NB* You need to do this every time you start a new session.
+-   Once packages are installed you call them in R by using the `library()` function:<br> *NB* You need to do this every time you start a new session.
 
 ::: {.callout-important appearance="simple" collapse="true"}
 ## Call the packages to use them in your session
