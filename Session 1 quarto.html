@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -63,10 +63,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="Session 1 quarto_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="Session 1 quarto_files/libs/quarto-html/anchor.min.js"></script>
 <link href="Session 1 quarto_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Session 1 quarto_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="Session 1 quarto_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Session 1 quarto_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Session 1 quarto_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Session 1 quarto_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="Session 1 quarto_files/libs/bootstrap/bootstrap-d5ac29a56adf641187225d49675c3d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="Session 1 quarto_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="Session 1 quarto_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="Session 1 quarto_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -113,12 +113,12 @@ Introduction
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work). <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop.<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> <em>NB</em> You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.</p>
+<p>This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop. To use RStudio on your own laptop, you must first download R and then download RStudio (R is a requirement for RStudio to work).<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> <em>NB</em> You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.</p>
 </div>
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset page-columns page-full">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Set up RStudio (Cloud)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Install RStudio (Laptop)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">RStudio Setup</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Some simple things!</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Set up RStudio (Cloud)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Install R &amp; RStudio (Laptop)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">RStudio Setup</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Some simple things!</a></li></ul>
 <div class="tab-content page-columns page-full">
 <div id="tabset-1-1" class="tab-pane active page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>This is the version of RStudio that we will use in the workshops. However, you should download and save all of the files we use to your own laptop and practice using RStudio on your laptop (see next tab).</p>
@@ -126,10 +126,10 @@ Introduction
 <p><a href="#fig-Posit_cloud_png" class="quarto-xref">Figure&nbsp;1</a> shows the opening Posit cloud page:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
-<div id="fig-Posit_cloud_png" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full" alt="The opening Posit cloud page looks like this">
+<div id="fig-Posit_cloud_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The opening Posit cloud page looks like this">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-Posit_cloud_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="Posit%20cloud.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="Posit%20cloud.png" class="img-fluid figure-img column-page-right" style="width:100.0%" alt="The opening Posit cloud page looks like this"></a>
+<a href="Posit%20cloud.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Posit Cloud"><img src="Posit%20cloud.png" class="img-fluid figure-img column-page-right" style="width:100.0%" alt="The opening Posit cloud page looks like this"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Posit_cloud_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Posit Cloud
@@ -145,50 +145,73 @@ Figure&nbsp;1: Posit Cloud
 </ul>
 </div>
 <div id="tabset-1-2" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Go to <a href="https://posit.co/download/rstudio-desktop/">RStudio (click on this link)</a> <br><br> The page looks like this:<br></p>
+<section id="install-r" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="install-r"><strong>1. Install R</strong></h5>
+<p>First you need to install R. Go to the R website (‘The Comprehensive R Archive Network’) at<br> <a href="https://cloud.r-project.org/">R (click on this link)</a> <br><br> The top of the page looks like this:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
-<div id="fig-RStudio_web_png" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full" alt="The RStudio windows look like this by default">
+<div id="fig-R_Network_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The Comprehensive R Archive Network page">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="RStudio%20page.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="RStudio%20page.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+<div aria-describedby="fig-R_Network_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="R%20Download.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: R web site"><img src="R%20Download.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The Comprehensive R Archive Network page"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: RStudio web site
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-R_Network_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: R web site
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<ol type="1">
-<li>Install R
-<ul>
-<li>Select the version for your computer (mac or Windows)</li>
-<li>Click on the first link for <em>R-(followed by the latest version number).pkg</em> to download the installation package
-<ul>
-<li>For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select ‘About this mac’.</li>
-</ul></li>
-<li>Follow the installation instructions<br><br></li>
-</ul></li>
-<li>Install RStudio
-<ul>
-<li>Choose the version for your operating system (Windows or Mac)</li>
-</ul></li>
-</ol>
-<p><em>Note</em>: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R.</p>
+<p>Click on the download link appropriate for your operating system (Windows or Mac) and follow the instructions.</p>
+<p><em>Note</em><br> For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select ‘About this mac’. <br><br></p>
+</section>
+<section id="install-rstudio" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="install-rstudio"><strong>2. Install RStudio</strong></h5>
+<p>Go to <a href="https://posit.co/download/rstudio-desktop/">RStudio (click on this link)</a> <br><br> The page looks like this:<br></p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-RStudio_web_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="RStudio%20IDE.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: RStudio web site"><img src="RStudio%20IDE.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: RStudio web site
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>This is the RStudio IDE User Guide which provides some useful information about RStudio as well as the download links for RStudio.<br><br> Scroll down to <code>Direct Downloads (Open Source)</code>, select the version appropriate for your operating system (Windos or Mac) and follow the instructions.<br></p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-RStudio_down_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="Select the RStudio version for your laptop">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-RStudio_down_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="RStudio%20IDE%20Downloads.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: RStudio download versions"><img src="RStudio%20IDE%20Downloads.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="Select the RStudio version for your laptop"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_down_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: RStudio download versions
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Note</em>: R and RStudio update quite regularly, and so it is a good idea to check the latest versions from time to time (RStudio will prompt you if there are new versions released). To update, simply repeat the instructions above to install the latest version of R.</p>
+</section>
 </div>
 <div id="tabset-1-3" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p><strong>1. RStudio looks like this</strong><br></p>
-<p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;3</a> shows the arrangement of the four windows in RStudio:</p>
+<p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;5</a> shows the arrangement of the four windows in RStudio:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
-<div id="fig-RStudio_png" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full" alt="The RStudio windows look like this by default">
+<div id="fig-RStudio_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5: RStudio"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: RStudio
+Figure&nbsp;5: RStudio
 </figcaption>
 </figure>
 </div>
@@ -226,7 +249,7 @@ Change global settings to your preferences
 <p>These settings will be saved in RStudio and used whenever you open it.<br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="global_options.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="Global options"><img src="global_options.gif" class="img-fluid figure-img" alt="Global options"></a></p>
+<p><a href="global_options.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Global options"><img src="global_options.gif" class="img-fluid figure-img" alt="Global options"></a></p>
 <figcaption>Global options</figcaption>
 </figure>
 </div>
@@ -261,13 +284,13 @@ Tip
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-newFolder_png" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-newFolder_png" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-newFolder_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="NewFolder.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="NewFolder.png" class="img-fluid figure-img" style="width:75.0%"></a>
+<a href="NewFolder.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;6: Create a new folder"><img src="NewFolder.png" class="img-fluid figure-img" style="width:75.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-newFolder_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Create a new folder
+Figure&nbsp;6: Create a new folder
 </figcaption>
 </figure>
 </div>
@@ -655,13 +678,6 @@ Click to see the output
 </div>
 </div>
 </div>
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: Posit Cloud</span>
-<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;2: RStudio web site</span>
-<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;3: RStudio</span>
-<span class="glightbox-desc lightbox-desc-4">Global options</span>
-<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;4: Create a new folder</span>
-</div>
 </section>
 
 </main>
@@ -701,18 +717,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -744,7 +749,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -752,7 +777,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -849,7 +874,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1117,30 +1141,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 
